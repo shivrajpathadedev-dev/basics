@@ -1,0 +1,376 @@
+<!-- keyup task -->
+<div class="container mt-2">
+    <div class="row">
+        <div class="col-md-4">
+            <h1 class="form-group">KeyUp Tasks</h1>
+            <div class="form-group">
+                <label for="users">Users</label>
+                <input (keyup)="OnUser($event)" type="text" class="form-control">
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container mt-2">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="form-group">
+                <label for="Product">Product</label>
+                <input (keyup)="OnProduct($event)" type="text" class="form-control">
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container mt-2">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="form-group">
+                <label for="app">App</label>
+                <input (keyup)="Onapp($event)" type="text" class="form-control">
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="form-group">
+                <label for="vehicle">Vehicle</label>
+                <input
+                (keyup)="Onvehicle($event)"
+                type="text" class="form-control">
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="form-group">
+                <label for="vehicle">Vehicle</label>
+                <input
+                (keyup)="Onmotors($event)"
+                type="text" class="form-control">
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="form-group">
+                <label for="motors">motors</label>
+                <input
+                (keyup)="Onmotors($event)"
+                type="text" class="form-control">
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="form-group">
+                <label for="cars">cars</label>
+                <input
+                (keyup)="Oncars($event)"
+                type="text" class="form-control">
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="form-group">
+                <label for="">BMW</label>
+                <input
+                (keyup)="OnBMW($event)"
+                type="text" class="form-control">
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="form-group">
+                <label for="">Swift</label>
+                <input
+                (keyup)="OnSwift($event)"
+                type="text" class="form-control">
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="form-group">
+                <label for="">Toyota</label>
+                <input
+                (keyup)="OnToyota($event)"
+                type="text" class="form-control">
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!--Element Referance task-->
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+            <h1>Element Referance task</h1>
+            <div class="form-group">
+                <label for="">products</label>
+                <input
+                #productName
+                type="text" class="form-control">
+                </div>
+                <button
+                (click)="Onsearch(productName)" class="btn btn-primary mt-2">Add products</button>
+            
+        </div>
+    </div>
+</div>
+
+<div class="container mt-2">
+    <div class="row">
+        <div class="col-md-4">
+            
+            <div class="form-group">
+                <label for="users">Users</label>
+                <input 
+                #Users
+                 type="text" class="form-control">
+                <button
+                (click)="Onusers(Users)"
+                class="btn btn-primary mt-2">Add User</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container mt-2">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="form-group">
+                <label for="Product">Product</label>
+                <input 
+                #product
+                type="text" class="form-control">
+                <button 
+                (click)="Onproductss(product)"
+                class="btn btn-primary mt-2">Add products</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="form-group">
+                <label for="vehicle">Vehicle</label>
+                <input
+                #Vehicle
+                type="text" class="form-control">
+                <button
+                (click)="OnVehicle(Vehicle)"
+                class="btn btn-primary mt-2">Add Vehicle</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="form-group">
+                <label for="vehicle">Vehicles</label>
+                <input
+                #Vehicles
+                type="text" class="form-control">
+                <button
+                (click)="OnVehicles(Vehicles)"
+                class="btn btn-primary mt-2">Add Vehicles</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="form-group">
+                <label for="cars">cars</label>
+                <input
+                #cars
+                type="text" class="form-control">
+                <button
+                (click)="Oncarss(cars)"
+                class="btn btn-primary mt-2">Add cars</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="form-group">
+                <label for="">BMW</label>
+                <input
+                #BMW
+                type="text" class="form-control">
+                <button
+                (click)="OnBMWs(BMW)"
+                class="btn btn-primary mt-2">Add BMW</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="form-group">
+                <label for="">Swift</label>
+                <input
+                #Swift
+                type="text" class="form-control">
+                <button
+                (click)="OnSwifts(Swift)"
+                class="btn btn-primary mt-2">Add Swift</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="form-group">
+                <label for="">Toyota</label>
+                <input
+                #Toyota
+                type="text" class="form-control">
+                <button 
+                (click)="OnToyotas(Toyota)"
+                class="btn btn-primary mt-2">Add Toyota</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="form-group">
+                <label for="">products</label>
+                <input
+                #productsss
+                type="text" class="form-control">
+                <button 
+                (click)="Onproductsss(productsss)"
+                class="btn btn-primary mt-2">Add products</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- View Child Decorater task -->
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+            <h1>View Child Decorater task</h1>
+            <div class="form-group">
+                <label for="">searchs</label>
+                <input
+                #searchs
+                type="text" class="form-control">
+                <button 
+                (click)="Onsearchs()"
+                class="btn btn-primary mt-2">Add searchs</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="form-group">
+                <label for="">model</label>
+                <input
+                #models
+                type="text" class="form-control">
+                <button 
+                (click)="Onmodels()"
+                class="btn btn-primary mt-2">Add model</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="form-group">
+                <label for="">profit</label>
+                <input
+                #profit
+                type="text" class="form-control">
+                <button 
+                (click)="Onprofit()"
+                class="btn btn-primary mt-2">Add profit</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="form-group">
+                <label for="">food</label>
+                <input
+                #food
+                type="text" class="form-control">
+                <button 
+                (click)="Onfood()"
+                class="btn btn-primary mt-2">Add food</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="form-group">
+                <label for="">animal</label>
+                <input
+                #animal
+                type="text" class="form-control">
+                <button 
+                (click)="Onanimal()"
+                class="btn btn-primary mt-2">Add animal</button>
+            </div>
+        </div>
+    </div>
+</div>

@@ -8,6 +8,9 @@ import { userComponent } from './shared/components/users/user.component';
 import { VehicleComponent } from './shared/components/vehicle/vehicle.component';
 import { MountainComponent } from './shared/components/Mountain/Mountain.component';
 import { TestComponent } from './shared/components/test/test.component';
+import { PassengerComponent } from './passenger/passenger.component';
+import { Keyup } from './shared/components/keyup/keyup.component';
+
 
 @NgModule({
   declarations: [
@@ -17,7 +20,10 @@ import { TestComponent } from './shared/components/test/test.component';
     userComponent,
     VehicleComponent,
     MountainComponent,
-    TestComponent
+    TestComponent,
+    PassengerComponent,
+    Keyup,
+
   ],
   imports: [
     BrowserModule
