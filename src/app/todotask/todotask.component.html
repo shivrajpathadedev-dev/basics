@@ -1,0 +1,455 @@
+<p>todotask works!</p>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-4 mb-4 mb-md-0">
+            <div class="form-group">
+                <input
+                #todoControl
+                type="text" class="form-control">
+            </div>
+            <button
+            (click)="OnTodoAdd(todoControl)"
+            class="btn btn-sm btn-block btn-primary">Add Todo</button>
+        </div>
+        <div class="col-md-8">
+            <ul class="list-group" *ngIf="todosArr.length >0; else noTodos">
+                <li 
+                *ngFor="let todo of todosArr"
+                class="list-group-item d-flex justify-content-between">
+                    
+               
+                <strong>
+                    {{todo.toodItem}}
+                </strong>
+                <div>
+                    <button class="mr-2 btn btn-sm btn-outline-primary">Edit</button>
+                    <button class="mr-2 btn btn-sm btn-outline-danger">Remove</button>
+
+                </div>
+                 </li>
+            </ul>
+            <ng-template #noTodos>
+                   <p class="alert alert-info">No todos</p>
+            </ng-template>
+            
+ 
+        </div>
+    </div>
+</div>
+
+<div class="container mt-2">
+    <div class="row">
+        <div class="col-md-4 mb-4 mb-md-0">
+            <div class="form-group">
+                <input
+                #todoControl
+                type="text" class="form-control">
+            </div>
+            <button
+            (click)="OnTodoAdds(todoControl)"
+            class="btn btn-sm btn-block btn-primary">Add Todo</button>
+        </div>
+        <div class="col-md-8">
+            <ul class="list-group" *ngIf="todosArr.length >0; else noTodos">
+                <li 
+                *ngFor="let todo of todosArrs"
+                class="list-group-item d-flex justify-content-between">
+                    
+               
+                <strong>
+                    {{todo.toodItem}}
+                </strong>
+                <div>
+                    <button class="mr-2 btn btn-sm btn-outline-primary">Edit</button>
+                    <button class="mr-2 btn btn-sm btn-outline-danger">Remove</button>
+
+                </div>
+                 </li>
+            </ul>
+            <ng-template #noTodos>
+                   <p class="alert alert-info">No todos</p>
+            </ng-template>
+            
+ 
+        </div>
+    </div>
+</div>
+
+<div class="container mt-2">
+    <div class="row">
+        <div class="col-md-4 mb-4 mb-md-0">
+            <div class="form-group">
+                <input
+                #animalControl
+                type="text" class="form-control">
+            </div>
+            <button
+            (click)="OnAnimal(animalControl)"
+            class="btn btn-sm btn-block btn-primary">Add Animal</button>
+        </div>
+        <div class="col-md-8">
+            <ul class="list-group" *ngIf="animalsArr.length >0; else noanimal">
+                <li 
+                *ngFor="let animal of animalsArr"
+                class="list-group-item d-flex justify-content-between">
+                    
+               
+                <strong>
+                    {{animal.name}}
+                </strong>
+                <div>
+                    <button class="mr-2 btn btn-sm btn-outline-primary">Edit</button>
+                    <button class="mr-2 btn btn-sm btn-outline-danger">Remove</button>
+
+                </div>
+                 </li>
+            </ul>
+            <ng-template #noanimal>
+                   <p class="alert alert-info">No Animal</p>
+            </ng-template>
+            
+ 
+        </div>
+    </div>
+</div>
+
+<div class="container mt-2">
+    <div class="row">
+        <div class="col-md-4 mb-4 mb-md-0">
+            <div class="form-group">
+                <input
+                #fruitsControl
+                type="text" class="form-control">
+            </div>
+            <button
+            (click)="Onfruits(fruitsControl)"
+            class="btn btn-sm btn-block btn-primary">Add fruits</button>
+        </div>
+        <div class="col-md-8">
+            <ul class="list-group" *ngIf="fruitsArr.length >0; else nofruits">
+                <li 
+                *ngFor="let fruits of fruitsArr"
+                class="list-group-item d-flex justify-content-between">
+                    
+               
+                <strong>
+                    {{fruits.name}}
+                </strong>
+                <div>
+                    <button class="mr-2 btn btn-sm btn-outline-primary">Edit</button>
+                    <button class="mr-2 btn btn-sm btn-outline-danger">Remove</button>
+
+                </div>
+                 </li>
+            </ul>
+            <ng-template #nofruits>
+                   <p class="alert alert-info">No fruits</p>
+            </ng-template>
+            
+ 
+        </div>
+    </div>
+</div>
+
+<div class="container mt-2">
+    <div class="row">
+        <div class="col-md-4 mb-4 mb-md-0">
+            <div class="form-group">
+                <input
+                #foodControl
+                type="text" class="form-control">
+            </div>
+            <button
+            (click)="onfood(foodControl)"
+            class="btn btn-sm btn-block btn-primary">Add food</button>
+        </div>
+        <div class="col-md-8">
+            <ul class="list-group" *ngIf="foodArr.length >0; else nofood">
+                <li 
+                *ngFor="let food of foodArr"
+                class="list-group-item d-flex justify-content-between">
+                    
+               
+                <strong>
+                    {{food.name}}
+                </strong>
+                <div>
+                    <button class="mr-2 btn btn-sm btn-outline-primary">Edit</button>
+                    <button class="mr-2 btn btn-sm btn-outline-danger">Remove</button>
+
+                </div>
+                 </li>
+            </ul>
+            <ng-template #nofood>
+                   <p class="alert alert-info">No food</p>
+            </ng-template>
+            
+ 
+        </div>
+    </div>
+</div>
+
+<div class="container mt-2">
+    <div class="row">
+        <div class="col-md-4 mb-4 mb-md-0">
+            <div class="form-group">
+                <input
+                #vehicleControl
+                type="text" class="form-control">
+            </div>
+            <button
+            (click)="Onvehicle(vehicleControl)"
+            class="btn btn-sm btn-block btn-primary">Add Vehicle</button>
+        </div>
+        <div class="col-md-8">
+            <ul class="list-group" *ngIf="vehiclesArr.length >0; else novehicle">
+                <li 
+                *ngFor="let vehicle of vehiclesArr"
+                class="list-group-item d-flex justify-content-between">
+                    
+               
+                <strong>
+                    {{vehicle.name}}
+                </strong>
+                <div>
+                    <button class="mr-2 btn btn-sm btn-outline-primary">Edit</button>
+                    <button class="mr-2 btn btn-sm btn-outline-danger">Remove</button>
+
+                </div>
+                 </li>
+            </ul>
+            <ng-template #novehicle>
+                   <p class="alert alert-info">No vehicle</p>
+            </ng-template>
+            
+ 
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-4 mb-4 mb-md-0">
+            <div class="form-group">
+                <input
+                #citiesControl
+                type="text" class="form-control">
+            </div>
+            <button
+            (click)="OnCities(citiesControl)"
+            class="btn btn-sm btn-block btn-primary">Add cities</button>
+        </div>
+        <div class="col-md-8">
+            <ul class="list-group" *ngIf="citiesArr.length >0; else nocities">
+                <li 
+                *ngFor="let cities of citiesArr"
+                class="list-group-item d-flex justify-content-between">
+                    
+               
+                <strong>
+                    {{cities.name}}
+                </strong>
+                <div>
+                    <button class="mr-2 btn btn-sm btn-outline-primary">Edit</button>
+                    <button class="mr-2 btn btn-sm btn-outline-danger">Remove</button>
+
+                </div>
+                 </li>
+            </ul>
+            <ng-template #nocities>
+                   <p class="alert alert-info">No cities</p>
+            </ng-template>
+            
+ 
+        </div>
+    </div>
+</div>
+
+<div class="container mt-2">
+    <div class="row">
+        <div class="col-md-4 mb-4 mb-md-0">
+            <div class="form-group">
+                <input
+                #subjectControl
+                type="text" class="form-control">
+            </div>
+            <button
+            (click)="Onsubject(subjectControl)"
+            class="btn btn-sm btn-block btn-primary">Add subject</button>
+        </div>
+        <div class="col-md-8">
+            <ul class="list-group" *ngIf="subjectsArr.length >0; else nosubject">
+                <li 
+                *ngFor="let subject of subjectsArr"
+                class="list-group-item d-flex justify-content-between">
+                    
+               
+                <strong>
+                    {{subject.name}}
+                </strong>
+                <div>
+                    <button class="mr-2 btn btn-sm btn-outline-primary">Edit</button>
+                    <button class="mr-2 btn btn-sm btn-outline-danger">Remove</button>
+
+                </div>
+                 </li>
+            </ul>
+            <ng-template #nosubject>
+                   <p class="alert alert-info">No subjects</p>
+            </ng-template>
+            
+ 
+        </div>
+    </div>
+</div>
+
+<div class="container mt-2">
+    <div class="row">
+        <div class="col-md-4 mb-4 mb-md-0">
+            <div class="form-group">
+                <input
+                #animalControl
+                type="text" class="form-control">
+            </div>
+            <button
+            (click)="OnAnimal(animalControl)"
+            class="btn btn-sm btn-block btn-primary">Add Animal</button>
+        </div>
+        <div class="col-md-8">
+            <ul class="list-group" *ngIf="animalsArr.length >0; else noanimal">
+                <li 
+                *ngFor="let animal of animalsArr"
+                class="list-group-item d-flex justify-content-between">
+                    
+               
+                <strong>
+                    {{animal.name}}
+                </strong>
+                <div>
+                    <button class="mr-2 btn btn-sm btn-outline-primary">Edit</button>
+                    <button class="mr-2 btn btn-sm btn-outline-danger">Remove</button>
+
+                </div>
+                 </li>
+            </ul>
+            <ng-template #noanimal>
+                   <p class="alert alert-info">No Animal</p>
+            </ng-template>
+            
+ 
+        </div>
+    </div>
+</div>
+
+<div class="container mt-2">
+    <div class="row">
+        <div class="col-md-4 mb-4 mb-md-0">
+            <div class="form-group">
+                <input
+                #gamesControl
+                type="text" class="form-control">
+            </div>
+            <button
+            (click)="Ongames(gamesControl)"
+            class="btn btn-sm btn-block btn-primary">Add games</button>
+        </div>
+        <div class="col-md-8">
+            <ul class="list-group" *ngIf="gamesArr.length >0; else nogames">
+                <li 
+                *ngFor="let games of gamesArr"
+                class="list-group-item d-flex justify-content-between">
+                <strong>
+                    {{games.name}}
+                </strong>
+                <div>
+                    <button class="mr-2 btn btn-sm btn-outline-primary">Edit</button>
+                    <button class="mr-2 btn btn-sm btn-outline-danger">Remove</button>
+
+                </div>
+                 </li>
+            </ul>
+            <ng-template #nogames>
+                   <p class="alert alert-info">No games</p>
+            </ng-template>
+            
+ 
+        </div>
+    </div>
+</div>
+
+<div class="container mt-2">
+    <div class="row">
+        <div class="col-md-4 mb-4 mb-md-0">
+            <div class="form-group">
+                <input
+                #clothesControl
+                type="text" class="form-control">
+            </div>
+            <button
+            (click)="onclothes(clothesControl)"
+            class="btn btn-sm btn-block btn-primary">Add clothes</button>
+        </div>
+        <div class="col-md-8">
+            <ul class="list-group" *ngIf="clothesArr.length >0; else noclothes">
+                <li 
+                *ngFor="let clothes of clothesArr"
+                class="list-group-item d-flex justify-content-between">
+                    
+               
+                <strong>
+                    {{clothes.name}}
+                </strong>
+                <div>
+                    <button class="mr-2 btn btn-sm btn-outline-primary">Edit</button>
+                    <button class="mr-2 btn btn-sm btn-outline-danger">Remove</button>
+
+                </div>
+                 </li>
+            </ul>
+            <ng-template #noclothes>
+                   <p class="alert alert-info">No clothes</p>
+            </ng-template>
+            
+ 
+        </div>
+    </div>
+</div>
+
+<div class="container mt-2">
+    <div class="row">
+        <div class="col-md-4 mb-4 mb-md-0">
+            <div class="form-group">
+                <input
+                #companiesControl
+                type="text" class="form-control">
+            </div>
+            <button
+            (click)="Oncompanies(companiesControl)"
+            class="btn btn-sm btn-block btn-primary">Add Companies</button>
+        </div>
+        <div class="col-md-8">
+            <ul class="list-group" *ngIf="companiesArr.length >0; else nocompaniese">
+                <li 
+                *ngFor="let companies of companiesArr"
+                class="list-group-item d-flex justify-content-between">
+                    
+               
+                <strong>
+                    {{companies.name}}
+                </strong>
+                <div>
+                    <button class="mr-2 btn btn-sm btn-outline-primary">Edit</button>
+                    <button class="mr-2 btn btn-sm btn-outline-danger">Remove</button>
+
+                </div>
+                 </li>
+            </ul>
+            <ng-template #nocompaniese>
+                   <p class="alert alert-info">No companies</p>
+            </ng-template>
+            
+ 
+        </div>
+    </div>
+</div>

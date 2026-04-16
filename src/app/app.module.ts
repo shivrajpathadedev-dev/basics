@@ -10,6 +10,7 @@ import { MountainComponent } from './shared/components/Mountain/Mountain.compone
 import { TestComponent } from './shared/components/test/test.component';
 import { PassengerComponent } from './passenger/passenger.component';
 import { Keyup } from './shared/components/keyup/keyup.component';
+import { TodotaskComponent } from './todotask/todotask.component';
 
 
 @NgModule({
@@ -23,6 +24,7 @@ import { Keyup } from './shared/components/keyup/keyup.component';
     TestComponent,
     PassengerComponent,
     Keyup,
+    TodotaskComponent,
 
   ],
   imports: [
