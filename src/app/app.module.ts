@@ -11,6 +11,7 @@ import { TestComponent } from './shared/components/test/test.component';
 import { PassengerComponent } from './passenger/passenger.component';
 import { Keyup } from './shared/components/keyup/keyup.component';
 import { TodotaskComponent } from './todotask/todotask.component';
+import { TodocrudComponent } from './todocrud/todocrud.component';
 
 
 @NgModule({
@@ -25,6 +26,7 @@ import { TodotaskComponent } from './todotask/todotask.component';
     PassengerComponent,
     Keyup,
     TodotaskComponent,
+    // TodocrudComponent,
 
   ],
   imports: [
